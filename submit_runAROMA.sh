@@ -1,7 +1,7 @@
 #!/bin/bash
 
 for task in SOCIAL GAMBLING; do
-  for subj in `cat newfile_lindsey.txt`; do
+  for subj in `cat Subject_Numbers.txt`; do
   	for RUN in LR RL; do
 
   		#Manages the number of jobs and cores
