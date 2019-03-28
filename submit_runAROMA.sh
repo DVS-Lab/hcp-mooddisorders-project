@@ -1,5 +1,5 @@
 #!/bin/bash
-
+rm re-runAROMA.log
 for task in SOCIAL GAMBLING; do
   for subj in `cat Subject_Numbers.txt`; do
   	for RUN in LR RL; do
