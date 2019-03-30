@@ -1,8 +1,8 @@
 #!/bin/bash
 
 
-for task in Emo Gam WM Soc; do
-  for subj in `cat EuniceSubs.txt`; do
+for task in Gam Soc; do
+  for subj in `cat Subject_Numbers.txt`; do
 
     #Manages the number of jobs and cores
     SCRIPTNAME=L2_${task}_Act.sh
