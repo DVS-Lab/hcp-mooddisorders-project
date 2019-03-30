@@ -1,8 +1,8 @@
 #!/bin/bash
 
 basedir=`pwd`
-MAINDATADIR=${basedir}/data
-MAINOUTPUTDIR=${basedir}/fsl
+MAINDATADIR=/data/projects/ppi-effect-sizes/data
+MAINOUTPUTDIR=/data/projects/ppi-effect-sizes/fsl
 
 subj=$1
 
