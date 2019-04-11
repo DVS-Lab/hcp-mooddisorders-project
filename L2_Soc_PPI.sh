@@ -1,14 +1,14 @@
 #!/bin/bash
 
 basedir=`pwd`
-MAINDATADIR=${basedir}/data
-MAINOUTPUTDIR=${basedir}/fsl
+MAINDATADIR=/data/projects/ppi-effect-sizes/data
+MAINOUTPUTDIR=/data/projects/ppi-effect-sizes/fsl
 
 subj=$1
 
-INPUT1=${MAINOUTPUTDIR}/${subj}/MNINonLinear/Results/tfMRI_SOCIAL_LR/L1_Social_PPI.feat
-INPUT2=${MAINOUTPUTDIR}/${subj}/MNINonLinear/Results/tfMRI_SOCIAL_RL/L1_Social_PPI.feat
-OUTPUT=${MAINOUTPUTDIR}/${subj}/MNINonLinear/Results/L2_Social_PPI
+INPUT1=${MAINOUTPUTDIR}/${subj}/MNINonLinear/Results/tfMRI_SOCIAL_LR/L1_Social_PPI_vmpfc.feat
+INPUT2=${MAINOUTPUTDIR}/${subj}/MNINonLinear/Results/tfMRI_SOCIAL_RL/L1_Social_PPI_vmpfc.feat
+OUTPUT=${MAINOUTPUTDIR}/${subj}/MNINonLinear/Results/L2_Social_PPI_vmpfc
 
 # checking L2 output
 NCOPES=7 #check last cope since they are done sequentially
@@ -19,11 +19,11 @@ else
 fi
 
 for run in LR RL; do
-  rm -rf ${MAINOUTPUTDIR}/${subj}/MNINonLinear/Results/tfMRI_SOCIAL_${run}/L1_Social_PPI.feat/reg
-  mkdir -p ${MAINOUTPUTDIR}/${subj}/MNINonLinear/Results/tfMRI_SOCIAL_${run}/L1_Social_PPI.feat/reg
-  ln -s $FSLDIR/etc/flirtsch/ident.mat ${MAINOUTPUTDIR}/${subj}/MNINonLinear/Results/tfMRI_SOCIAL_${run}/L1_Social_PPI.feat/reg/example_func2standard.mat
-  ln -s $FSLDIR/etc/flirtsch/ident.mat ${MAINOUTPUTDIR}/${subj}/MNINonLinear/Results/tfMRI_SOCIAL_${run}/L1_Social_PPI.feat/reg/standard2example_func.mat
-  ln -s $FSLDIR/data/standard/MNI152_T1_2mm.nii.gz ${MAINOUTPUTDIR}/${subj}/MNINonLinear/Results/tfMRI_SOCIAL_${run}/L1_Social_PPI.feat/reg/standard.nii.gz
+  rm -rf ${MAINOUTPUTDIR}/${subj}/MNINonLinear/Results/tfMRI_SOCIAL_${run}/L1_Social_PPI_vmpfc.feat/reg
+  mkdir -p ${MAINOUTPUTDIR}/${subj}/MNINonLinear/Results/tfMRI_SOCIAL_${run}/L1_Social_PPI_vmpfc.feat/reg
+  ln -s $FSLDIR/etc/flirtsch/ident.mat ${MAINOUTPUTDIR}/${subj}/MNINonLinear/Results/tfMRI_SOCIAL_${run}/L1_Social_PPI_vmpfc.feat/reg/example_func2standard.mat
+  ln -s $FSLDIR/etc/flirtsch/ident.mat ${MAINOUTPUTDIR}/${subj}/MNINonLinear/Results/tfMRI_SOCIAL_${run}/L1_Social_PPI_vmpfc.feat/reg/standard2example_func.mat
+  ln -s $FSLDIR/data/standard/MNI152_T1_2mm.nii.gz ${MAINOUTPUTDIR}/${subj}/MNINonLinear/Results/tfMRI_SOCIAL_${run}/L1_Social_PPI_vmpfc.feat/reg/standard.nii.gz
 done
 
 #find and replace

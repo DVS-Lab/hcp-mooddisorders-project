@@ -1,14 +1,14 @@
 #!/bin/bash
 
 basedir=`pwd`
-MAINDATADIR=${basedir}/data
-MAINOUTPUTDIR=${basedir}/fsl
+MAINDATADIR=/data/projects/ppi-effect-sizes/data
+MAINOUTPUTDIR=/data/projects/ppi-effect-sizes/fsl
 
 task=GAMBLING
 run=$1
 subj=$2
 
-OUTPUT=${MAINOUTPUTDIR}/${subj}/MNINonLinear/Results/tfMRI_${task}_${run}/L1_Gam_PPI
+OUTPUT=${MAINOUTPUTDIR}/${subj}/MNINonLinear/Results/tfMRI_${task}_${run}/L1_Gam_PPI_vmpfc
 DATA=${MAINOUTPUTDIR}/${subj}/MNINonLinear/Results/tfMRI_${task}_${run}/L1_Gam_Act.feat/filtered_func_data.nii.gz
 NVOLUMES=`fslnvols ${DATA}`
 
@@ -25,7 +25,7 @@ EVLOSS=${MAINDATADIR}/${subj}/MNINonLinear/Results/tfMRI_${task}_${run}/EVs/loss
 EVWIN=${MAINDATADIR}/${subj}/MNINonLinear/Results/tfMRI_${task}_${run}/EVs/win.txt
 
 #generate mask's timecourse
-MASK=${basedir}/Masks/NAcc_func.nii.gz
+MASK=${basedir}/Masks/vmPFC_ROI_social_reward.nii.gz
 TIMECOURSE=${MAINOUTPUTDIR}/${subj}/MNINonLinear/Results/tfMRI_${task}_${run}/my_timecourse.txt
 fslmeants -i $DATA -o $TIMECOURSE -m $MASK
 
