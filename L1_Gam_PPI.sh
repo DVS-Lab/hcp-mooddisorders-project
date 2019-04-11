@@ -25,7 +25,7 @@ EVLOSS=${MAINDATADIR}/${subj}/MNINonLinear/Results/tfMRI_${task}_${run}/EVs/loss
 EVWIN=${MAINDATADIR}/${subj}/MNINonLinear/Results/tfMRI_${task}_${run}/EVs/win.txt
 
 #generate mask's timecourse
-MASK=${basedir}/Masks/vmPFC_ROI_social_reward.nii.gz
+MASK=${basedir}/masks/vmPFC_ROI_social_reward.nii.gz
 TIMECOURSE=${MAINOUTPUTDIR}/${subj}/MNINonLinear/Results/tfMRI_${task}_${run}/my_timecourse.txt
 fslmeants -i $DATA -o $TIMECOURSE -m $MASK
 
