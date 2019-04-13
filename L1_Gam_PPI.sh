@@ -17,6 +17,7 @@ if [ -e ${OUTPUT}.feat/cluster_mask_zstat1.nii.gz ]; then
   echo "output exists, skipping...."
   exit
 else
+  echo "missing output for $subj $task " >> re-runL1_ppi.log
   rm -rf ${OUTPUT}.feat
 fi
 
