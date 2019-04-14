@@ -14,7 +14,7 @@ NVOLUMES=`fslnvols ${DATA}`
 
 # checking L1 output
 if [ -e ${OUTPUT}.feat/cluster_mask_zstat1.nii.gz ]; then
-  echo "output exists, skipping...."
+  #echo "output exists, skipping...."
   exit
 else
   echo "missing output for $subj $task " >> re-runL1_ppi.log
@@ -31,7 +31,7 @@ TIMECOURSE=${MAINOUTPUTDIR}/${subj}/MNINonLinear/Results/tfMRI_${task}_${run}/my
 fslmeants -i $DATA -o $TIMECOURSE -m $MASK
 
 #find and replace: run feat for smoothing
-ITEMPLATE=${basedir}/templates/L1_SOC_PPI.fsf
+ITEMPLATE=${basedir}/templates/L1_Soc_PPI.fsf
 OTEMPLATE=${MAINOUTPUTDIR}/${subj}/MNINonLinear/Results/tfMRI_${task}_${run}/L1_Social_PPI.fsf
 sed -e 's@OUTPUT@'$OUTPUT'@g' \
 -e 's@DATA@'$DATA'@g' \
