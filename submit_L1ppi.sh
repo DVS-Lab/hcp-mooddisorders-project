@@ -6,7 +6,7 @@ for task in Gam Soc; do
   	for RUN in LR RL; do
   		#Manages the number of jobs and cores
   		SCRIPTNAME=L1_${task}_PPI.sh
-  		NCORES=22
+  		NCORES=34
   		while [ $(ps -ef | grep -v grep | grep $SCRIPTNAME | wc -l) -ge $NCORES ]; do
   	  		sleep 1m
   		done
