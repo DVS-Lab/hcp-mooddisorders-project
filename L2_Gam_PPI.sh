@@ -15,6 +15,7 @@ NCOPES=7 #check last cope since they are done sequentially
 if [ -e ${OUTPUT}.gfeat/cope${NCOPES}.feat/cluster_mask_zstat1.nii.gz ]; then
   exit
 else
+  echo "missing output for $subj $task " >> re-runL2_ppi.log
   rm -rf ${OUTPUT}.gfeat
 fi
 
