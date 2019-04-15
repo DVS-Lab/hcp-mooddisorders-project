@@ -12,7 +12,7 @@ OUTPUT=${MAINOUTPUTDIR}/${subj}/MNINonLinear/Results/L2_Social_PPI_vmpfc
 
 # checking L2 output
 NCOPES=7 #check last cope since they are done sequentially
-if [ -e ${OUTPUT}.gfeat/cope${NCOPES}.feat/cluster_mask_zstat1.nii.gz ]; then
+if [ -e ${OUTPUT}.gfeat/cope${NCOPES}.feat/stats/cope1.nii.gz ]; then
   exit
 else
   echo "missing output for $subj $task " >> re-runL2_ppi.log
