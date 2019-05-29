@@ -38,7 +38,7 @@ sed -e 's@OUTPUT@'$OUTPUT'@g' \
 #runs feat on output template
 feat $OTEMPLATE
 
-for C in `seq $NCOPES`; do
+for C in `seq ${NCOPES}`; do
   rm -rf ${OUTPUT}.gfeat/cope${C}.feat/filtered_func_data.nii.gz
   rm -rf ${OUTPUT}.gfeat/cope${C}.feat/var_filtered_func_data.nii.gz
 done

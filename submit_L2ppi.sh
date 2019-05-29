@@ -2,12 +2,12 @@
 
 
 
-for task in Gam WM Emo Soc; do
-  for subj in `cat EuniceSubs.txt`; do
+for task in Gam Soc; do
+  for subj in `cat Subject_Numbers.txt`; do
 
     #Manages the number of jobs and cores
     SCRIPTNAME=L2_${task}_PPI.sh
-    NCORES=42
+    NCORES=32
     while [ $(ps -ef | grep -v grep | grep $SCRIPTNAME | wc -l) -ge $NCORES ]; do
       sleep 1m
     done
