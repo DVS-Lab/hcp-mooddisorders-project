@@ -1,0 +1,115 @@
+hypotheses & ROIS
+
+a) social act: TPJ & Cerebellum (ACT)
+b) social ppi: vmPFC + Cerebellum (PPI)
+c) gam act: striatum (ACT)
+
+Activation Analyses
+DM3
+Social
+Cope 1 - TPJ
+
+./palm-alpha115/palm -i /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/Activation_analyses/DM3/L3_DM3_Act_Soc_Cope1_Ment-Rand_Cluster3p1.gfeat/cope1.feat/filtered_func_data.nii -d /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/Activation_analyses/DM3/L3_DM3_Act_Soc_Cope1_Ment-Rand_Cluster3p1.gfeat/design.mat -t /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/Activation_analyses/DM3/L3_DM3_Act_Soc_Cope1_Ment-Rand_Cluster3p1.gfeat/design.con -m /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/roi_masks_svc/roi_tpj.nii -eb EB.csv -o /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PALM/PALM_DM3_Act_Soc_Cope1_TPJ -n 5000 -corrcon -logp -T
+
+Cope 1 - Cerebellum
+
+./palm-alpha115/palm -i /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/Activation_analyses/DM3/L3_DM3_Act_Soc_Cope1_Ment-Rand_Cluster3p1.gfeat/cope1.feat/filtered_func_data.nii -d /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/Activation_analyses/DM3/L3_DM3_Act_Soc_Cope1_Ment-Rand_Cluster3p1.gfeat/design.mat -t /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/Activation_analyses/DM3/L3_DM3_Act_Soc_Cope1_Ment-Rand_Cluster3p1.gfeat/design.con -m /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/roi_masks_svc/roi_cerebellum.nii -eb EB.csv -o /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PALM/PALM_DM3_Act_Soc_Cope1_Cbell -n 5000 -corrcon -logp -T
+
+Social
+Cope 2 - TPJ
+./palm-alpha115/palm -i /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/Activation_analyses/DM3/L3_DM3_Act_Soc_Cope2_Rand-Ment_Cluster3p1.gfeat/cope1.feat/filtered_func_data.nii -d /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/Activation_analyses/DM3/L3_DM3_Act_Soc_Cope2_Rand-Ment_Cluster3p1.gfeat/design.mat -t /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/Activation_analyses/DM3/L3_DM3_Act_Soc_Cope2_Rand-Ment_Cluster3p1.gfeat/design.con -m /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/roi_masks_svc/roi_tpj.nii -eb EB.csv -o /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PALM/PALM_DM3_Act_Soc_Cope2_TPJ -n 5000 -corrcon -logp -T
+
+Cope 2 - Cerebellum
+./palm-alpha115/palm -i /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/Activation_analyses/DM3/L3_DM3_Act_Soc_Cope2_Rand-Ment_Cluster3p1.gfeat/cope1.feat/filtered_func_data.nii -d /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/Activation_analyses/DM3/L3_DM3_Act_Soc_Cope2_Rand-Ment_Cluster3p1.gfeat/design.mat -t /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/Activation_analyses/DM3/L3_DM3_Act_Soc_Cope2_Rand-Ment_Cluster3p1.gfeat/design.con -m /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/roi_masks_svc/roi_cerebellum.nii -eb EB.csv -o /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PALM/PALM_DM3_Act_Soc_Cope2_Cbell -n 5000 -corrcon -logp -T
+
+Gam
+Cope 3 - Striatum
+./palm-alpha115/palm -i /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/Activation_analyses/DM3/L3_DM3_Act_Gam_Cope3_Rew-Pun_Cluster3p1.gfeat/cope1.feat/filtered_func_data.nii -d /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/Activation_analyses/DM3/L3_DM3_Act_Gam_Cope3_Rew-Pun_Cluster3p1.gfeat/design.mat -t /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/Activation_analyses/DM3/L3_DM3_Act_Gam_Cope3_Rew-Pun_Cluster3p1.gfeat/design.con -m /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/roi_masks_svc/roi_striatum.nii -eb EB.csv -o /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PALM/PALM_DM3_Act_Gam_Cope3_striatum -n 5000 -corrcon -logp -T 
+
+Gam
+Cope4 - Striatum
+./palm-alpha115/palm -i /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/Activation_analyses/DM3/L3_DM3_Act_Gam_Cope4_Pun-Rew_Cluster3p1.gfeat/cope1.feat/filtered_func_data.nii -d /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/Activation_analyses/DM3/L3_DM3_Act_Gam_Cope4_Pun-Rew_Cluster3p1.gfeat/design.mat -t /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/Activation_analyses/DM3/L3_DM3_Act_Gam_Cope4_Pun-Rew_Cluster3p1.gfeat/design.con -m /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/roi_masks_svc/roi_striatum.nii -eb EB.csv -o /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PALM/PALM_DM3_Act_Gam_Cope4_striatum -n 5000 -corrcon -logp -T 
+
+DM11
+Social
+Cope 1 - TPJ
+./palm-alpha115/palm -i /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/Activation_analyses/DM11/L3_DM11_Act_Soc_Cope1_Ment-Rand_Cluster3p1.gfeat/cope1.feat/filtered_func_data.nii -d /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/Activation_analyses/DM11/L3_DM11_Act_Soc_Cope1_Ment-Rand_Cluster3p1.gfeat/design.mat -t /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/Activation_analyses/DM11/L3_DM11_Act_Soc_Cope1_Ment-Rand_Cluster3p1.gfeat/design.con -m /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/roi_masks_svc/roi_tpj.nii -eb EB.csv -o /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PALM/PALM_DM11_Act_Soc_Cope1_tpj -n 5000 -corrcon -logp -T
+
+Cope 1 - Cerebellum
+./palm-alpha115/palm -i /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/Activation_analyses/DM11/L3_DM11_Act_Soc_Cope1_Ment-Rand_Cluster3p1.gfeat/cope1.feat/filtered_func_data.nii -d /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/Activation_analyses/DM11/L3_DM11_Act_Soc_Cope1_Ment-Rand_Cluster3p1.gfeat/design.mat -t /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/Activation_analyses/DM11/L3_DM11_Act_Soc_Cope1_Ment-Rand_Cluster3p1.gfeat/design.con -m /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/roi_masks_svc/roi_cerebellum.nii -eb EB.csv -o /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PALM/PALM_DM11_Act_Soc_Cope1_cbell -n 5000 -corrcon -logp -T
+
+Social
+Cope 2 - TPJ
+
+./palm-alpha115/palm -i /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/Activation_analyses/DM11/L3_DM11_Act_Soc_Cope2_Rand-Ment_Cluster3p1.gfeat/cope1.feat/filtered_func_data.nii -d /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/Activation_analyses/DM11/L3_DM11_Act_Soc_Cope2_Rand-Ment_Cluster3p1.gfeat/design.mat -t /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/Activation_analyses/DM11/L3_DM11_Act_Soc_Cope2_Rand-Ment_Cluster3p1.gfeat/design.con -m /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/roi_masks_svc/roi_tpj.nii -eb EB.csv -o /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PALM/PALM_DM11_Act_Soc_Cope2_tpj -n 5000 -corrcon -logp -T
+
+
+Cope 2 - Cerebellum
+./palm-alpha115/palm -i /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/Activation_analyses/DM11/L3_DM11_Act_Soc_Cope2_Rand-Ment_Cluster3p1.gfeat/cope1.feat/filtered_func_data.nii -d /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/Activation_analyses/DM11/L3_DM11_Act_Soc_Cope2_Rand-Ment_Cluster3p1.gfeat/design.mat -t /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/Activation_analyses/DM11/L3_DM11_Act_Soc_Cope2_Rand-Ment_Cluster3p1.gfeat/design.con -m /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/roi_masks_svc/roi_cerebellum.nii -eb EB.csv -o /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PALM/PALM_DM11_Act_Soc_Cope2_cbell -n 5000 -corrcon -logp -T 
+
+Gam 
+Cope 3 - Striatum
+
+./palm-alpha115/palm -i /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/Activation_analyses/DM11/L3_DM11_Act_Gam_Cope3_Rew-Pun_Cluster3p1.gfeat/cope1.feat/filtered_func_data.nii -d /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/Activation_analyses/DM11/L3_DM11_Act_Gam_Cope3_Rew-Pun_Cluster3p1.gfeat/design.mat -t /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/Activation_analyses/DM11/L3_DM11_Act_Gam_Cope3_Rew-Pun_Cluster3p1.gfeat/design.con -m /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/roi_masks_svc/roi_striatum.nii -eb EB.csv -o /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PALM/PALM_DM11_Act_Gam_Cope3_striatum -n 5000 -corrcon -logp -T 
+
+Gam 
+Cope 4 - Striatum
+
+./palm-alpha115/palm -i /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/Activation_analyses/DM11/L3_DM11_Act_Gam_Cope4_Pun-Rew_Cluster3p1.gfeat/cope1.feat/filtered_func_data.nii -d /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/Activation_analyses/DM11/L3_DM11_Act_Gam_Cope4_Pun-Rew_Cluster3p1.gfeat/design.mat -t /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/Activation_analyses/DM11/L3_DM11_Act_Gam_Cope4_Pun-Rew_Cluster3p1.gfeat/design.con -m /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/roi_masks_svc/roi_striatum.nii -eb EB.csv -o /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PALM/PALM_DM11_Act_Gam_Cope4_striatum -n 5000 -corrcon -logp -T
+
+PPI Analyses
+DM3
+Social
+
+Cope 3 - cbell
+
+./palm-alpha115/palm -i /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PPI_analyses/DM3/L3_DM3_PPI_Soc_Cope3_TC_Cluster3p1.gfeat/cope1.feat/filtered_func_data.nii -d /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PPI_analyses/DM3/L3_DM3_PPI_Soc_Cope3_TC_Cluster3p1.gfeat/design.mat -t /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PPI_analyses/DM3/L3_DM3_PPI_Soc_Cope3_TC_Cluster3p1.gfeat/design.con -m /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/roi_masks_svc/roi_cerebellum.nii -eb EB.csv -o /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PALM/PALM_DM3_PPI_Soc_Cope3_cbell -n 5000 -corrcon -logp -T 
+
+Social
+Cope 4 - cbell
+
+./palm-alpha115/palm -i /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PPI_analyses/DM3/L3_DM3_PPI_Soc_Cope4_MentPPI_Cluster3p1.gfeat/cope1.feat/filtered_func_data.nii -d /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PPI_analyses/DM3/L3_DM3_PPI_Soc_Cope4_MentPPI_Cluster3p1.gfeat/design.mat -t /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PPI_analyses/DM3/L3_DM3_PPI_Soc_Cope4_MentPPI_Cluster3p1.gfeat/design.con -m /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/roi_masks_svc/roi_cerebellum.nii -eb EB.csv -o /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PALM/PALM_DM3_PPI_Soc_Cope4_cbell -n 5000 -corrcon -logp -T 
+
+
+Social
+Cope 5 - cbell
+
+./palm-alpha115/palm -i /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PPI_analyses/DM3/L3_DM3_PPI_Soc_Cope5_RandPPI_Cluster3p1.gfeat/cope1.feat/filtered_func_data.nii -d /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PPI_analyses/DM3/L3_DM3_PPI_Soc_Cope5_RandPPI_Cluster3p1.gfeat/design.mat -t /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PPI_analyses/DM3/L3_DM3_PPI_Soc_Cope5_RandPPI_Cluster3p1.gfeat/design.con -m /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/roi_masks_svc/roi_cerebellum.nii -eb EB.csv -o /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PALM/PALM_DM3_PPI_Soc_Cope5_cbell -n 5000 -corrcon -logp -T
+
+Social
+Cope 6 - cbell
+
+./palm-alpha115/palm -i /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PPI_analyses/DM3/L3_DM3_PPI_Soc_Cope6_MentPPI-RandPPI_Cluster3p1.gfeat/cope1.feat/filtered_func_data.nii -d /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PPI_analyses/DM3/L3_DM3_PPI_Soc_Cope6_MentPPI-RandPPI_Cluster3p1.gfeat/design.mat -t /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PPI_analyses/DM3/L3_DM3_PPI_Soc_Cope6_MentPPI-RandPPI_Cluster3p1.gfeat/design.con -m /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/roi_masks_svc/roi_cerebellum.nii -eb EB.csv -o /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PALM/PALM_DM3_PPI_Soc_Cope6_cbell -n 5000 -corrcon -logp -T 
+
+Social
+Cope 7 - TPJ
+
+./palm-alpha115/palm -i /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PPI_analyses/DM3/L3_DM3_PPI_Soc_Cope7_RandPPI-MentPPI_Cluster3p1.gfeat/cope1.feat/filtered_func_data.nii -d /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PPI_analyses/DM3/L3_DM3_PPI_Soc_Cope7_RandPPI-MentPPI_Cluster3p1.gfeat/design.mat -t /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PPI_analyses/DM3/L3_DM3_PPI_Soc_Cope7_RandPPI-MentPPI_Cluster3p1.gfeat/design.con -m /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/roi_masks_svc/roi_cerebellum.nii -eb EB.csv -o /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PALM/PALM_DM3_PPI_Soc_Cope7_cbell -n 5000 -corrcon -logp -T
+
+DM11
+
+Soc
+Cope 3 - cbell
+
+./palm-alpha115/palm -i /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PPI_analyses/DM11/L3_DM11_PPI_Social_Cope3_TC_Cluster3p1.gfeat/cope1.feat/filtered_func_data.nii -d /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PPI_analyses/DM11/L3_DM11_PPI_Social_Cope3_TC_Cluster3p1.gfeat/design.mat -t /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PPI_analyses/DM11/L3_DM11_PPI_Social_Cope3_TC_Cluster3p1.gfeat/design.con -m /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/roi_masks_svc/roi_cerebellum.nii -eb EB.csv -o /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PALM/PALM_DM11_PPI_Social_Cope3_cbell -n 5000 -corrcon -logp -T
+
+Soc
+Cope 4 - cbell
+
+./palm-alpha115/palm -i /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PPI_analyses/DM11/L3_DM11_PPI_Social_Cope4_MentalPPI_Cluster3p1.gfeat/cope1.feat/filtered_func_data.nii -d /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PPI_analyses/DM11/L3_DM11_PPI_Social_Cope4_MentalPPI_Cluster3p1.gfeat/design.mat -t /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PPI_analyses/DM11/L3_DM11_PPI_Social_Cope4_MentalPPI_Cluster3p1.gfeat/design.con -m /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/roi_masks_svc/roi_cerebellum.nii -eb EB.csv -o /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PALM/PALM_DM11_PPI_Social_Cope4_cbell -n 5000 -corrcon -logp -T 
+
+Soc
+Cope 5 - cbell
+
+./palm-alpha115/palm -i /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PPI_analyses/DM11/L3_DM11_PPI_Social_Cope5_RandPPI_Cluster3p1.gfeat/cope1.feat/filtered_func_data.nii -d /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PPI_analyses/DM11/L3_DM11_PPI_Social_Cope5_RandPPI_Cluster3p1.gfeat/design.mat -t /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PPI_analyses/DM11/L3_DM11_PPI_Social_Cope5_RandPPI_Cluster3p1.gfeat/design.con -m /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/roi_masks_svc/roi_cerebellum.nii -eb EB.csv -o /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PALM/PALM_DM11_PPI_Social_Cope5_cbell -n 5000 -corrcon -logp -T
+
+Soc
+Cope 6 - cbell
+
+./palm-alpha115/palm -i /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PPI_analyses/DM11/L3_DM11_PPI_Social_Cope6_MentPPI-RandPPI_Cluster3p1.gfeat/cope1.feat/filtered_func_data.nii -d /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PPI_analyses/DM11/L3_DM11_PPI_Social_Cope6_MentPPI-RandPPI_Cluster3p1.gfeat/design.mat -t /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PPI_analyses/DM11/L3_DM11_PPI_Social_Cope6_MentPPI-RandPPI_Cluster3p1.gfeat/design.con -m /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/roi_masks_svc/roi_cerebellum.nii -eb EB.csv -o /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PALM/PALM_DM11_PPI_Social_Cope6_cbell -n 5000 -corrcon -logp -T
+
+Soc
+Cope 7 - cbell
+
+./palm-alpha115/palm -i /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PPI_analyses/DM11/L3_DM11_PPI_Social_Cope7_RandPPI-MentPPI_Cluster3p1.gfeat/cope1.feat/filtered_func_data.nii -d /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PPI_analyses/DM11/L3_DM11_PPI_Social_Cope7_RandPPI-MentPPI_Cluster3p1.gfeat/design.mat -t /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PPI_analyses/DM11/L3_DM11_PPI_Social_Cope7_RandPPI-MentPPI_Cluster3p1.gfeat/design.con -m /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/roi_masks_svc/roi_cerebellum.nii -eb EB.csv -o /data/projects/ppi-effect-sizes/fsl/HCP_2019_L3_Revised_Output/PALM/PALM_DM11_PPI_Social_Cope7_cbell -n 5000 -corrcon -logp -T
+

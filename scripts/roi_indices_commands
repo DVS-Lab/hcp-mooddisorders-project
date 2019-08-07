@@ -1,0 +1,84 @@
+IMG=$FSLDIR/data/atlases/HarvardOxford/HarvardOxford-sub-maxprob-thr25-2mm.nii.gz
+fslmaths $IMG -thr 11 -uthr 11 -bin L_accumbens
+fslmaths $IMG -thr 21 -uthr 21 -bin R_accumbens
+fslmaths $IMG -thr 5 -uthr 5 -bin L_caudate
+fslmaths $IMG -thr 16 -uthr 16 -bin R_caudate
+fslmaths $IMG -thr 6 -uthr 6 -bin L_putamen
+fslmaths $IMG -thr 17 -uthr 17 -bin R_putamen
+
+fslmaths L_accumbens -add R_accumbens -add L_caudate -add R_caudate -add L_putamen -add R_putamen -bin roi_striatum 
+
+IMG=$FSLDIR/data/atlases/HarvardOxford/HarvardOxford-cort-maxprob-thr25-2mm.nii.gz
+
+fslmaths $IMG -thr 21 -uthr 21 -bin TPJ_ag
+fslmaths $IMG -thr 19 -uthr 19 -bin TPJ_A_smg
+fslmaths $IMG -thr 20 -uthr 20 -bin TPJ_P_smg
+fslmaths $IMG -thr 10 -uthr 10 -bin TPJ_P_stg
+fslmaths $IMG -thr 12 -uthr 12 -bin TPJ_P_mtg
+
+fslmaths TPJ_ag -add TPJ_A_smg -add TPJ_P_smg -add TPJ_P_stg -add TPJ_P_mtg -bin roi_tpj 
+
+IMG=$FSLDIR/data/atlases/Cerebellum/Cerebellum-MNIfnirt-maxprob-thr25-2mm.nii.gz
+
+fslmaths $IMG -thr 8 -uthr 8 -bin CB_L_crusI
+fslmaths $IMG -thr 10 -uthr 10 -bin CB_R_crusI
+fslmaths $IMG -thr 11 -uthr 11 -bin CB_L_crusII
+fslmaths $IMG -thr 13 -uthr 13 -bin CB_R_crusII
+fslmaths $IMG -thr 14 -uthr 14 -bin CB_L_viib
+fslmaths $IMG -thr 16 -uthr 16 -bin CB_R_viib
+
+fslmaths $IMG -thr 6 -uthr 6 -bin CB_vm_vi
+fslmaths $IMG -thr 9 -uthr 9 -bin CB_vm_ci
+fslmaths $IMG -thr 12 -uthr 12 -bin CB_vm_cii
+fslmaths $IMG -thr 15 -uthr 15 -bin CB_vm_viib
+fslmaths $IMG -thr 18 -uthr 18 -bin CB_vm_viia
+fslmaths $IMG -thr 21 -uthr 21 -bin CB_vm_viiib
+fslmaths $IMG -thr 24 -uthr 24 -bin CB_vm_ix
+fslmaths $IMG -thr 27 -uthr 27 -bin CB_vm_x
+
+fslmaths CB_L_crusI -add CB_R_crusI -add CB_L_crusII -add CB_R_crusII -add CB_L_viib -add CB_R_viib -add CB_vm_vi -add CB_vm_ci -add CB_vm_cii -add CB_vm_viib -add CB_vm_viia -add CB_vm_viiib -add CB_vm_ix -add CB_vm_x -bin roi_cerebellum
+
+
+
+
+
+Notes: (x = confirmed in fslview)
+ 
+Striatum [IMG=$FSLDIR/data/atlases/HarvardOxford/HarvardOxford-sub-maxprob-thr25-2mm.nii.gz]
+left accumbens=11 | fslmaths $IMG -thr 11 -uthr 11 -bin L_accumbens x
+right accumbens=21 | fslmaths $IMG -thr 21 -uthr 21 -bin R_accumbens 
+left caudate=5 | fslmaths $IMG -thr 5 -uthr 5 -bin L_caudate 
+right caudate=16 | fslmaths $IMG -thr 16 -uthr 16 -bin R_caudate 
+left putamen=6 | fslmaths $IMG -thr 6 -uthr 6 -bin L_putamen 
+right putamen=17 | fslmaths $IMG -thr 17 -uthr 17 -bin R_putamen 
+
+
+
+TPJ [IMG=$FSLDIR/data/atlases/HarvardOxford/HarvardOxford-cort-maxprob-thr25-2mm.nii.gz]
+
+Angular Gyrus=21 | fslmaths $IMG -thr 21 -uthr 21 -bin TPJ_ag 
+Supramarginal Gyrus, anterior division=19 | fslmaths $IMG -thr 19 -uthr 19 -bin TPJ_A_smg 
+Supramarginal Gyrus, posterior division=20 | fslmaths $IMG -thr 20 -uthr 20 -bin TPJ_P_smg x
+Superior Temporal Gyrus, posterior division=10 |fslmaths $IMG -thr 10 -uthr 10 -bin TPJ_P_stg x
+Middle Temporal Gyrus, posterior division=12 | fslmaths $IMG -thr 12 -uthr 12 -bin TPJ_P_mtg 
+
+
+Cerebellum [IMG=$FSLDIR/data/atlases/Cerebellum/Cerebellum-MNIfnirt-maxprob-thr25-2mm.nii.gz]
+
+Left Crus I=8 | fslmaths $IMG -thr 8 -uthr 8 -bin CB_L_crusI x
+Right Crus I=10 | fslmaths $IMG -thr 10 -uthr 10 -bin CB_R_crusI 
+Left Crus II=11 | fslmaths $IMG -thr 11 -uthr 11 -bin CB_L_crusII 
+Right Crus II=13 | fslmaths $IMG -thr 13 -uthr 13 -bin CB_R_crusII 
+Left VIIb=14 | fslmaths $IMG -thr 14 -uthr 14 -bin CB_L_viib 
+Right VIIb=16 | fslmaths $IMG -thr 16 -uthr 16 -bin CB_R_viib 
+
+Vermis
+
+Vermis VI=6 | fslmaths $IMG -thr 6 -uthr 6 -bin CB_vm_vi 
+Vermis Crus I=9 | fslmaths $IMG -thr 9 -uthr 9 -bin CB_vm_ci 
+Vermis Crus II=12 | fslmaths $IMG -thr 12 -uthr 12 -bin CB_vm_cii 
+Vermis VIIb=15 | fslmaths $IMG -thr 15 -uthr 15 -bin CB_vm_viib 
+Vermis VIIIa=18 | fslmaths $IMG -thr 18 -uthr 18 -bin CB_vm_viia 
+Vermis VIIIb=21 | fslmaths $IMG -thr 21 -uthr 21 -bin CB_vm_viiib 
+Vermis IX=24 | fslmaths $IMG -thr 24 -uthr 24 -bin CB_vm_ix 
+Vermis X=27 | fslmaths $IMG -thr 27 -uthr 27 -bin CB_vm_x 
