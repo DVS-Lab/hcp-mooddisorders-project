@@ -1,0 +1,7 @@
+Generating Left Crus 7b ROI Barcharts:
+
+
+fslmeants -i /data/projects/hcp-mooddisorders-project/data/analyses_ppi/DM11/L3_DM11_PPI_Social_Cope4_MentalPPI_Cluster3p1.gfeat/cope1.feat/filtered_func_data.nii -o fslmeants_crus7_ment.txt -m /data/projects/hcp-mooddisorders-project/data/left_crus_7b.nii.gz 
+
+
+fslmeants -i /data/projects/hcp-mooddisorders-project/data/analyses_ppi/DM11/L3_DM11_PPI_Social_Cope5_RandPPI_Cluster3p1.gfeat/cope1.feat/filtered_func_data.nii -o fslmeants_crus7_rand.txt -m /data/projects/hcp-mooddisorders-project/data/left_crus_7b.nii.gz 
